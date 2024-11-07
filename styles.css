@@ -128,14 +128,29 @@ button#reset-data {
 }
 
 #gameCanvas {
-    background-color: #a978e9;
+/* styles.css */
+
+    background: linear-gradient(
+        to top,
+        #d2b48c 0%,         /* Sedikit pasir di bagian bawah */
+        #c2c287 10%,        /* Pasir yang lebih cerah */
+        #a0d196 25%,        /* Awal warna hijau rumput */
+        #89c497 50%,        /* Hijau lembut untuk rumput */
+        #add8a3 70%,        /* Hijau lebih terang, mendekati horizon */
+        #c3e5f5 85%,        /* Biru muda langit mendekati horizon */
+        #b1dcf2 100%        /* Langit cerah biru lembut */
+    );
     border: 2px solid #000;
     display: block;
     margin: 20px auto;
     padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+
 }
+
+    
+
+
+
 
 /* Leaderboard Styling */
 #leaderboard {
