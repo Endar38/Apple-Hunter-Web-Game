@@ -776,7 +776,7 @@ function draw() {
             // Jika gambar belum dimuat, fallback ke gambar dasar
             if (obj.type === 'apple') {
                 // Gambar apel sebagai lingkaran hijau dengan batang coklat
-                ctx.fillStyle = 'green';
+                ctx.fillStyle = 'yellow';
                 ctx.beginPath();
                 ctx.arc(obj.x, obj.y, 15, 0, Math.PI * 2);
                 ctx.fill();
@@ -784,7 +784,7 @@ function draw() {
                 ctx.fillRect(obj.x - 3, obj.y - 15, 6, 10);
             } else {
                 // Gambar perangkap sebagai kotak hitam
-                ctx.fillStyle = 'black';
+                ctx.fillStyle = 'yellow';
                 ctx.beginPath();
                 ctx.rect(obj.x - 15, obj.y - 15, 30, 30);
                 ctx.fill();
@@ -805,7 +805,7 @@ function draw() {
 // Fungsi untuk menggambar instruksi kontrol
 function drawControlsInstructions() {
     ctx.font = "16px Arial";
-    ctx.fillStyle = "white";
+    ctx.fillStyle = "black";
     ctx.fillText("Player 1: W/A/S/D to move, Q to attack", 150, 30);
     ctx.fillText("Player 2: I/J/K/L to move, O to attack", 150, 50);
 }
@@ -813,7 +813,7 @@ function drawControlsInstructions() {
 // Fungsi untuk menggambar skor dan waktu
 function drawScoresAndTime() {
     ctx.font = "20px Arial";
-    ctx.fillStyle = "white";
+    ctx.fillStyle = "black";
     ctx.fillText(`${players[0].name}: ${players[0].score}`, canvas.width/2, 30);
     ctx.fillText(`${players[1].name}: ${players[1].score}`, canvas.width/2, 60);
     ctx.fillText(`Time: ${timeRemaining}`, canvas.width - 225, 30);
